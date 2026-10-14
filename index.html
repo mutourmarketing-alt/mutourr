@@ -1931,7 +1931,7 @@ body.modal-open #chatbot { visibility: hidden; pointer-events: none; }
   /* ===== EMAILJS: gửi email xác nhận về khách =====
      Điền 3 giá trị lấy từ https://dashboard.emailjs.com (xem file huong-dan-emailjs.md).
      Để trống thì web tự dùng FormSubmit như cũ. */
-  const EMAILJS = { serviceId: '', templateId: '', publicKey: '' };
+  const EMAILJS = { serviceId: 'service_m0olsje', templateId: 'template_3pz3n0m', publicKey: 'fQ147A-JtP0ameOpL' };
   const emailjsOn = () => !!(EMAILJS.serviceId && EMAILJS.templateId && EMAILJS.publicKey);
   const sendEmailJS = async (params) => {
     const res = await fetch('https://api.emailjs.com/api/v1.0/email/send', {
